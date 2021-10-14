@@ -18,27 +18,35 @@ import { useWallet } from '@solana/wallet-adapter-react';
 import { getLast } from '../../utils/utils';
 
 const attributesDefault = {
-  name: 'Noname',
-  symbol: '',
-  description: '',
-  external_url: 'https://www.example.com/',
+  name: 'Zoolana',
+  description: 'Zoolana is a play-and-earn game being built on the Solana blockchain. This Teaser Edition NFT is the first official Zoolana NFT.',
+  external_url: 'https://www.zoolana.io',
   image: '',
-  animation_url: undefined,
+  animation_url: '',
   // 500 is 5%
   seller_fee_basis_points: 500,
-  creators: [],
+  creators: [
+    {
+      address: "6QNWBWhxBfEMkwBUTeTsGyxohBicA3k6EGWr6X8KmzUL",
+      share: 50,
+    },
+    {
+      address: "4Tysv54Lxh1L16h5Yt5ncFGbG5ont8iXvCUzFFkfCYFY",
+      share: 50,
+    },
+  ],
   properties: {
     files: [],
-    category: MetadataCategory.Image,
+    category: MetadataCategory.Video,
     maxSupply: 0,
   },
   collection: {
-    name: 'OG Collection',
-    family: 'tb',
+    name: 'Teaser Edition',
+    family: 'Zoolana',
   },
 };
 
-const artName = 'Art'
+const artName = 'Zoolana'
 
 const normalizeData = (data: string[][]) => {
   // first line is field names,
