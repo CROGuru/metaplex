@@ -417,7 +417,7 @@ export const ArtCreateSingleItem = ({
         };
 
         const creator = new Creator({
-          address: fixedCreators.key,
+          address: '6QNWBWhxBfEMkwBUTeTsGyxohBicA3k6EGWr6X8KmzUL',
           share: 100,
           verified: true,
         });
